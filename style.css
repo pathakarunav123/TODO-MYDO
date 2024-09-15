@@ -1,0 +1,120 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #27233a; /* Updated background color */
+  color: #E6E6E6; /* Light grey text color */
+  font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+  color: #A3C9FF; /* Soft blue heading color */
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 300px; /* Increased input width */
+  padding: 10px;
+  border: 2px solid #A3C9FF; /* Soft blue border color */
+  background-color: #333042; /* Darker background for input */
+  color: #E6E6E6; /* Light grey text color */
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+input[type="text"]::placeholder {
+  color: #A3C9FF; /* Soft blue placeholder */
+}
+
+input[type="text"]:hover {
+  border-color: #E6E6E6; /* Light grey border on hover */
+  box-shadow: 0 0 5px #E6E6E6; /* Glow effect on hover */
+}
+
+.btn {
+  margin-top: 20px; /* Added margin to create a gap between the button and the input */
+  padding: 10px 20px;
+  background-color: #333042; /* Dark background for button */
+  color: #A3C9FF; /* Soft blue text */
+  border: 2px solid #A3C9FF; /* Soft blue border */
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.btn:hover {
+  background-color: #A3C9FF; /* Soft blue background on hover */
+  color: #333042; /* Dark text on hover */
+  border-color: #E6E6E6; /* Light grey border on hover */
+  box-shadow: 0 0 10px #E6E6E6; /* Glow effect on hover */
+}
+
+.todo-container {
+  width: 320px;
+  margin-top: 30px;
+  border: 2px solid #A3C9FF; /* Soft blue border */
+  padding: 10px;
+  background-color: #333042; /* Dark background for the todo container */
+  border-radius: 5px;
+}
+
+.todo-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-container li {
+  padding: 10px;
+  border-bottom: 1px solid #A3C9FF; /* Soft blue separator between items */
+  color: #E6E6E6; /* Light grey text for list items */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Gap between list items */
+}
+
+.todo-container li:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.todo-container li.completed {
+  text-decoration: line-through;
+  color: #808080; /* Grey text for completed items */
+}
+
+.todo-container .main_todo_div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main_todo_div .deleteBtn {
+  margin-left: 20px; /* Gap between the list item text and the delete button */
+  padding: 5px 10px;
+  background-color: #333042; /* Dark background for the delete button */
+  color: #A3C9FF; /* Soft blue text */
+  border: 2px solid #A3C9FF; /* Soft blue border */
+  font-size: 15px; /* Text size */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+.main_todo_div .deleteBtn:hover {
+  background-color: #A3C9FF; /* Soft blue background on hover */
+  color: #333042; /* Dark text on hover */
+  border-color: #E6E6E6; /* Light grey border on hover */
+  box-shadow: 0 0 5px #E6E6E6; /* Glow effect on hover */
+}
